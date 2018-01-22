@@ -2,8 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');//修复修改后的文件名
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack  = require('webpack');
-
+console.log(__dirname)
+console.log('test')
 module.exports = {
+
     entry:{
         app: './src/index.js',
         // print: './src/print.js'
@@ -67,9 +69,9 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
                   name: 'manifest'
                 }),
-        // new webpack.optimize.CommonsChunkPlugin({//去除重复的导包
-        //     name:'runtime'
-        // })
+        new webpack.optimize.CommonsChunkPlugin({//去除重复的导包
+            name:'runtime'
+        })
     ]
 
 };
