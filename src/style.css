@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('./DroidSerif-BoldItalic.ttf') format('ttf');
+    font-family: 'test-font';
+    src: url('./UniTortred.ttf') format('ttf');
     font-weight: 800;
     font-style: normal
 }
 
 .hello{
     color: blue;
-    font-family: 'MyFont';
+    font-family: 'test-font';
     background: url('./test_logo.png');
 }

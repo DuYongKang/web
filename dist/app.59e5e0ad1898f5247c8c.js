@@ -1,128 +1,20 @@
-webpackJsonp([1],[
-/* 0 */,
-/* 1 */
+webpackJsonp([1],{
+
+/***/ "6AG1":
+/***/ (function(module, exports) {
+
+module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminder"],"body":["Call Cindy on Tuesday"]}}
+
+/***/ }),
+
+/***/ "94gL":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ac0108b21e37fd45ca95e0486e669a3b.png";
+module.exports = __webpack_require__.p + "4f1fb597fbd50afcea20fd0ba5cf883d.ttf";
 
 /***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_logo_png__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__test_logo_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_xml__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__math__ = __webpack_require__(12);
-
-
-
-
-
-
-if (false) {
-  console.log("Looks like we are in development mode!");
-}
-
-function component() {
-  var element = document.createElement("div");
-  var btn = document.createElement("button");
-  element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(["Hello", "webpack"], " ");
-
-  btn.innerHTML = "Click me and check the console!";
-  // btn.onclick = printMe;
-  element.appendChild(btn);
-
-  element.classList.add("hello");
-  btn.onclick = e =>
-    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 14)).then(module => {
-      var print = module.default;
-      print();
-    });
-
-  //添加图片
-  // var myIcon = new Image();
-  // myIcon.src = Icon;
-
-  // element.appendChild(myIcon);
-
-  // console.log(Data);
-
-  return element;
-}
-
-// function getComponent() {//动态加载
-//   return import(/* webpackChunkName: "lodash"*/ "lodash")
-//     .then(_ => {
-//       var element = document.createElement("div");
-//       element.innerHTML = _.join(["Hello", "webpack"], " ");
-//       return element;
-//     })
-//     .catch(error => "An error occurred while loading the component");
-// }
-
-// getComponent().then(component => {
-//   document.body.appendChild(component);
-// })
-
-document.body.appendChild(component());
-
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(6);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(9)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(7)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\r\n    font-family: 'MyFont';\r\n    src: url(" + __webpack_require__(8) + ") format('ttf');\r\n    font-weight: 800;\r\n    font-style: normal\r\n}\r\n\r\n.hello{\r\n    color: blue;\r\n    font-family: 'MyFont';\r\n    background: url(" + __webpack_require__(1) + ");\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 7 */
+/***/ "FZ+f":
 /***/ (function(module, exports) {
 
 /*
@@ -204,13 +96,40 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 8 */
+
+/***/ "GcMe":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1f5dc2bf62705a7d09533b1538c9c173.ttf";
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("y4E4");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("MTIv")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
-/* 9 */
+
+/***/ "MTIv":
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -256,7 +175,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(10);
+var	fixUrls = __webpack_require__("mJPh");
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -569,7 +488,101 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 10 */
+
+/***/ "MddZ":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export square */
+/* unused harmony export cube */
+function square(x){
+    return x*x;
+}
+
+function cube(x){
+    return x * x * x;
+}
+
+/***/ }),
+
+/***/ "gXmu":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ac0108b21e37fd45ca95e0486e669a3b.png";
+
+/***/ }),
+
+/***/ "lVK7":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__("M4fF");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css__ = __webpack_require__("GcMe");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_logo_png__ = __webpack_require__("gXmu");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__test_logo_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml__ = __webpack_require__("6AG1");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_xml__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__math__ = __webpack_require__("MddZ");
+
+
+
+
+
+
+if (false) {
+  console.log("Looks like we are in development mode!");
+}
+
+function component() {
+  var element = document.createElement("div");
+  var btn = document.createElement("button");
+  element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(["Hello", "webpack"], " ");
+
+  btn.innerHTML = "Click me and check the console!";
+  // btn.onclick = printMe;
+  element.appendChild(btn);
+
+  element.classList.add("hello");
+  btn.onclick = e =>
+    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "3Di9")).then(module => {
+      var print = module.default;
+      print();
+    });
+
+  //添加图片
+  // var myIcon = new Image();
+  // myIcon.src = Icon;
+
+  // element.appendChild(myIcon);
+
+  console.log(__WEBPACK_IMPORTED_MODULE_3__data_xml___default.a);
+
+  return element;
+}
+
+// function getComponent() {//动态加载
+//   return import(/* webpackChunkName: "lodash"*/ "lodash")
+//     .then(_ => {
+//       var element = document.createElement("div");
+//       element.innerHTML = _.join(["Hello", "webpack"], " ");
+//       return element;
+//     })
+//     .catch(error => "An error occurred while loading the component");
+// }
+
+// getComponent().then(component => {
+//   document.body.appendChild(component);
+// })
+
+document.body.appendChild(component());
+
+
+/***/ }),
+
+/***/ "mJPh":
 /***/ (function(module, exports) {
 
 
@@ -664,25 +677,20 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports) {
 
-module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminder"],"body":["Call Cindy on Tuesday"]}}
+/***/ "y4E4":
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+exports = module.exports = __webpack_require__("FZ+f")(undefined);
+// imports
 
-"use strict";
-/* unused harmony export square */
-/* unused harmony export cube */
-function square(x){
-    return x*x;
-}
 
-function cube(x){
-    return x * x * x;
-}
+// module
+exports.push([module.i, "@font-face {\r\n    font-family: 'test-font';\r\n    src: url(" + __webpack_require__("94gL") + ") format('ttf');\r\n    font-weight: 800;\r\n    font-style: normal\r\n}\r\n\r\n.hello{\r\n    color: blue;\r\n    font-family: 'test-font';\r\n    background: url(" + __webpack_require__("gXmu") + ");\r\n}", ""]);
+
+// exports
+
 
 /***/ })
-],[2]);
+
+},["lVK7"]);

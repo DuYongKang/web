@@ -30,7 +30,7 @@ function component() {
 
   // element.appendChild(myIcon);
 
-  // console.log(Data);
+  console.log(Data);
 
   return element;
 }

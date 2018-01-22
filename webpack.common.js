@@ -13,6 +13,7 @@ module.exports = {
         ]
     },
     output: {
+        // filename: '[name].bundle.js',
         filename: '[name].[chunkhash].js',
         chunkFilename:'[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -56,15 +57,19 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),//自动清理webpack目录
         new HtmlWebpackPlugin({
-            title:'Code Splitting'
+            title:'Codf Splitting'
         }),
+        //注意，引入顺序在这里很重要。CommonsChunkPlugin 的 'vendor' 实例，必须在 'manifest' 实例之前引入
         new webpack.HashedModuleIdsPlugin(),//保持引入的第三包生成的bundle不变
-        new webpack.optimize.CommonsChunkPlugin({//注意顺序
-            name:'vendor'
+        new webpack.optimize.CommonsChunkPlugin({//注意顺序,
+            name:'vendor'//指定公共 bundle 的名称
         }),
-        new webpack.optimize.CommonsChunkPlugin({//去除重复的导包
-            name:'runtime'
-        })
+        new webpack.optimize.CommonsChunkPlugin({
+                  name: 'manifest'
+                }),
+        // new webpack.optimize.CommonsChunkPlugin({//去除重复的导包
+        //     name:'runtime'
+        // })
     ]
 
 };
